@@ -11,21 +11,12 @@ use App\Http\Controllers\admin\goods\ProductController;
 use App\Http\Controllers\admin\categories\CategoryController;
 use App\Http\Controllers\admin\statistic\StatisticController;
 use Illuminate\Support\Facades\Auth;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 //Для посетителей
-Route::prefix('/visitor/')->middleware('guest')->group(function () {
+Route::prefix('/visitor')->middleware('guest')->group(function () {
    Route::get('/product/{id}', [HomeController::class, 'show'])->name('guest.product.show');
    Route::get('/categories', [HomeController::class, 'categorieslist'])->name('categories.show');
    Route::get('/categories/{category}', [HomeController::class, 'category'])->name('category.show');
