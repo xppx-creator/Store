@@ -36,7 +36,7 @@
          </div>
       </div>
       <div class="d-flex justify-content-between py-3 mt-3 border-top">
-         <p class="mb-0">© 2024 Компания. Все права защищены.</p>
+         <p class="mb-0">© 2025 Компания. Все права защищены.</p>
          <ul class="nav">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Политика конфиденциальности</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Условия использования</a></li>

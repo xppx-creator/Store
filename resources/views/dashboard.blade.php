@@ -1,6 +1,6 @@
 @section('title', 'Профиль')
 
-@extends('layouts.auth')
+@extends('layouts.main')
 @section('content')
    @if (auth()->user()->isAdmin())
       <div class="mb-6">
@@ -163,6 +163,9 @@
                   <p class="text-gray-500 mb-2">Область: {{ $item->region }}</p>
                   <p class="text-gray-500">Електронная почта: {{ $item->email }}</p>
                @endforeach
+            </div>
+            <div>
+               ДМЬБЖДАЬЖМДЬАЖ
             </div>
          </div>
       </section>

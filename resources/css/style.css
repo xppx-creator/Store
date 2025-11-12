@@ -159,6 +159,17 @@
    color: #000;
 }
 
+/* стили для хедера */
+
+.btn-outline-light{
+   margin-right: 10px;
+}
+
+.menu-link-position .text-secondary:hover {
+   color:#ddd !important ;
+}
+
+
 /* Адаптивность для маленьких экранов */
 @media (max-width: 768px) {
    .chart-container {
@@ -207,3 +218,4 @@
       margin-top: 30px;
    }
 }
+

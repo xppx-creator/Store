@@ -18,10 +18,10 @@
                   <span>Главная страница</span>
                </a>
             </li>
-            <li class="nav-item display-flex justify-items-center p-2">
+            <li class="nav-item display-flex justify-items-center p-2 category-text">
                <a href="{{ route('categories.show') }}" class="nav-link menu-link-position {{ Route::is('categories.show') ? 'text-white' : 'text-secondary' }} ">
                   <x-icons.category/>
-                  <span>Категории</span>
+                  <span >Категории</span>
                </a>
             </li>
             <li class="nav-item display-flex justify-items-center p-2">
@@ -41,7 +41,7 @@
          </ul>
          <div class="nav-item sign">
             <div class="text-start">
-               <a href="{{ route('login') }}" type="button" class=" btn btn-outline-light">Войти</a>
+               <a href="{{ route('login') }}" type="button" class="btn btn-outline-light">Войти</a>
                <a href="{{ route('register') }}" type="button" class="btn btn-warning">Зарегистрироваться</a>
             </div>
          </div>
@@ -195,7 +195,7 @@
                         <x-nav-link class="menu-link-position" :href="route('user.basket')"   :active="request()->routeIs('user.basket')">
                            <x-icons.basket/>
                            <span class="relative">
-                              {{ __('Карзина') }}
+                              {{ __('Корзина') }}
                               @if (!empty(session('basket')))
                                  <span class="absolute" style="top:-6px; right:30px; font-size:15px;">
                                     @php
@@ -270,7 +270,7 @@
                      {{ __('Главная страница') }}
                   </x-responsive-nav-link>
                   <x-responsive-nav-link :href="route('auth.categories')" :active="request()->routeIs('auth.categories')"> {{ __('Категории') }}</x-responsive-nav-link>
-                  <x-responsive-nav-link :href="route('user.basket')" :active="request()->routeIs('user.basket')"> {{ __('Карзина') }}</x-responsive-nav-link>
+                  <x-responsive-nav-link :href="route('user.basket')" :active="request()->routeIs('user.basket')"> {{ __('Корзина') }}</x-responsive-nav-link>
                   <x-responsive-nav-link :href="route('user.liked')" :active="request()->routeIs('user.liked')"> {{ __('Желаемые') }}</x-responsive-nav-link>
                </div>
             
